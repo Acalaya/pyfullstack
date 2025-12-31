@@ -1,0 +1,7 @@
+=========== Your Bill =============
+mobile===> Rs. 6170
+television===> Rs. 44690
+watch===> Rs. 120
+pen===> Rs. 2000
+=======================
+Total price ===> Rs. 52980
