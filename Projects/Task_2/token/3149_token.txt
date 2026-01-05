@@ -1,0 +1,6 @@
+===== Your Token =====
+Vehicle number: 3149
+Name: Nishan
+Address: Parsa
+Entry time: 09:40 PM
+Vehicle type: 2

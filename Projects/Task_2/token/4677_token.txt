@@ -1,0 +1,6 @@
+===== Your Token =====
+Vehicle number: 4677
+Name: Abhay
+Address: Bharatpur
+Entry time: 09:38 PM
+Vehicle type: 2

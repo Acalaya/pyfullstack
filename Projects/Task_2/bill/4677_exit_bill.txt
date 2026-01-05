@@ -1,0 +1,9 @@
+======= Your Bill =======
+Vehicle number: 4677
+Name: Abhay
+Address: Bharatpur
+Entry time: 09:38 PM
+Exit time: 09:51 PM
+Vehicle type: 2
+=========================
+Total price: Rs 130

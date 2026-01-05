@@ -1,0 +1,14 @@
+Name of employee: sachin barali
+Age: 23
+Designation: Manager
+Salary: Rs 200000
+
+Name of employee: Kosish Pariyar
+Age: 21
+Designation: CTO
+Salary: Rs 100000
+Name of employee: Acalaya
+Age: 23
+Designation: CEO
+Salary: Rs 100,000,000
+
