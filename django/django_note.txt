@@ -1,0 +1,12 @@
+Django ==> Framework of python (specially build for backend development)
+build by Newspaper company 
+
+MVC : Model View Controller
+M ==> data or database
+V ==> templates or user interface 
+C ==> Controller(business logic) ==> connects between user interface and database 
+
+MVT : Model View template
+M ==> Data
+V ==> View
+T ==>  Template
