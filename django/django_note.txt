@@ -10,3 +10,29 @@ MVT : Model View template
 M ==> Data
 V ==> View
 T ==>  Template
+
+Notes: 
+install virtual environment: 
+    python3 -m venv (Env_name)
+
+activate virtual environment:
+    source (Env_name)\bin\activate
+
+create root project:
+    django-admin startproject (project_name)
+
+run python server:
+    python3 manage.py runserver
+
+create app(project features/modules):
+    python3 manage.py startapp (app_name)
+
+ORM(Object relational mapping) converts the python file into django file through migrations
+python code for modules --> ORM --> Migration file(makemigrations) --> migrate (migrationfile==>sql queries)
+
+
+DJANGO WORKFLOW:
+Templates ======(process: url)======== View ================= Model
+Browser(frontend)(Event) --request--> Server --CRUD data--> Database
+Browser(frontend)(Event) <--response-- Server 
+
