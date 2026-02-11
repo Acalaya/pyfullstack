@@ -1,0 +1,11 @@
+from django.urls import path
+from . import views 
+
+urlpatterns = [
+    path('', views.product_page,name='product_page'),
+    path('categories/', views.get_all_categories,name='all_categories'),
+    path('delete_category/<int:category_id>/', views.delete_category, name='delete_category'),
+    path('delete_product/<int:product_id>/', views.delete_product, name='delete_product'),
+    path('login_form/',views.form_practise, name='login_form')
+
+]

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block page_title %}
+Product Page
+{% endblock %}
+
+{% block main_content %} 
+  <body>
+    <div class="container">
+      <h2 class="text-muted text-center my-5">All Products</h2>
+      {% if product_length %} 
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>Product Price</th>
+            <th>Product Description</th>
+            <th>Category</th>
+            <th>In Stock</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in products %}
+          <tr>
+            <td>{{item.product_name}}</td>
+            <td>
+              <img
+                src="{{item.product_image.url}}"
+                alt="{{item.product_name}}"
+                height="100px"
+                width="100px"
+              />
+            </td>
+            <td>Rs {{item.product_price}}</td>
+            <td>{{item.product_description}}</td>
+            <td>{{item.category.category_name}}</td>
+            <td>
+              {% if item.in_stock %}
+              instock
+              {% else %}
+              out of stock
+              {% endif %}
+            </td>
+            <td>
+              <button class="btn btn-primary">Edit</button>
+              <a href="{% url 'delete_product' item.id %}" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <div class="empty-container">
+        <h1 class="text-color">No Product Found</h1>
+      </div>
+      {% endif %}
+    </div>
+    </div>
+
+{% endblock %} 
+
+  </body>

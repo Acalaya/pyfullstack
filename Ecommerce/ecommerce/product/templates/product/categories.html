@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block page_title %} 
+All Categories
+{% endblock %}
+
+{% block main_content %} 
+  <body>
+    <div class="container">
+      <h2 class="text-muted text-center my-5">All Categories</h2>
+      {% if categories_length %} 
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Category Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in categories %} <!--django templating engine() --> 
+          <tr>
+            <td>{{item.category_name}}</td>
+            <td>
+              <button class="btn btn-primary">Edit</button>
+              <a href="{% url 'delete_category' item.id %}" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody> 
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-container">
+      <h1 class="text-color">No Category Found</h1>
+    </div>
+    {% endif %}
+  </body>
+</html>
+
+{% endblock %}

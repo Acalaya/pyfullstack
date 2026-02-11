@@ -1,0 +1,16 @@
+// Template Inheritance //
+
+1. create a html file inside templates file (ROOT-TEMPLATE)
+2. write the repeating codes that's to be Inherit:
+    <title>{% block page_title %} {% endblock %}</title>
+    <main>{% block main_content %} {% endblock %}</main>
+
+
+3. the html files from where the code need to inherit: 
+    -{% extends "root_template.html" %}
+    -{% block page_title %}  
+     title-name (can be anything you wanna write )
+     {% endblock %}
+    -{% block main_content% }
+     main content of the html files 
+     {% endblock %}
