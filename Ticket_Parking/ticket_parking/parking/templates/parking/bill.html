@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="bg-white p-6 rounded-xl shadow-sm">
+
+    <h2 class="text-lg font-semibold mb-4 text-gray-700">
+        Generate Bill 🧾
+    </h2>
+
+    <form method="POST" class="space-y-3">
+        {% csrf_token %}
+
+        <input name="vehicle_no"
+               placeholder="Vehicle Number"
+               class="border border-gray-300 p-2 w-full rounded-lg text-sm focus:outline-purple-300">
+
+        <button class="w-full bg-purple-400 text-white py-2 rounded-lg hover:bg-purple-500 transition">
+            Generate Bill
+        </button>
+    </form>
+
+</div>
+
+{% endblock %}

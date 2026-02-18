@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bharatpur Parking System</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body class="bg-pink-50 min-h-screen flex flex-col">
+
+    <!-- top bar -->
+    <nav class="bg-pink-400 text-white px-6 py-4 flex justify-between items-center shadow-sm">
+        <h1 class="text-lg font-semibold tracking-wide">
+            Bharatpur Parking 🌸
+        </h1>
+
+        <div class="space-x-5 text-sm">
+            <a href="/" class="hover:underline">Home</a>
+            <a href="/enter/" class="hover:underline">Entry</a>
+            <a href="/bill/" class="hover:underline">Bill</a>
+        </div>
+    </nav>
+
+    <!-- main area -->
+    <main class="flex-grow flex justify-center items-start p-8">
+
+        <div class="w-full max-w-md">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="text-center text-xs text-gray-500 pb-4">
+        made for Bharatpur Metropolitan City ✨
+    </footer>
+
+    {% block extra_script %}{% endblock %}
+
+</body>
+</html>
